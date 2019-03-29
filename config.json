@@ -1,0 +1,11 @@
+{
+    "format": "yaml",
+    "region": "ap-southeast-1",
+    "options":{
+        "StackName": "Instance-Scheduler"
+    },
+    "interval": 60,
+    "notify":{
+        "slack": "url"
+    }
+}

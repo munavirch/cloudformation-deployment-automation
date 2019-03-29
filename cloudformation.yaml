@@ -1,0 +1,12 @@
+---
+AWSTemplateFormatVersion: "2010-09-09"
+Description: "Creates an SNS topic"
+Resources:
+  Topic:
+    Type: AWS::SNS::Topic
+    Properties:
+      DisplayName: "Sample Topic"
+      Subscription:
+        - Endpoint: https://someendpoint.com
+          Protocol: https
+      TopicName: SampleTopic1
