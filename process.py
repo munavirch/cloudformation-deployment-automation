@@ -28,7 +28,7 @@ template = "cloudformation.{}".format(config['format'])
 if not os.path.isfile(template):
     print("No template file.")
     exit(1)
-client = boto3.client('cloudformation')
+client = boto3.client('cloudformation', region_name=config['region'])
 args = config['options']
 with open(template) as file:
     args['TemplateBody'] = file.read()

@@ -9,4 +9,4 @@ Resources:
       Subscription:
         - Endpoint: https://someendpoint.com
           Protocol: https
-      TopicName: SampleTopic1
+      TopicName: SampleTopic
