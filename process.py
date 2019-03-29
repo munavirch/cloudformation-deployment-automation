@@ -33,7 +33,10 @@ args = config['options']
 with open(template) as file:
     args['TemplateBody'] = file.read()
 try:
-    stack = client.create_stack(**args)
+    if config['type'] == 'create':
+        stack = client.create_stack(**args)
+    else:
+        stack = client.update_stack(**args)
 except ClientError as e:
     notify(config['notify']['slack'], 'Fail', e.response['Error']['Message'])
 stackname = config['options']['StackName']

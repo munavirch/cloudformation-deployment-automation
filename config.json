@@ -1,6 +1,7 @@
 {
     "format": "yaml",
     "region": "ap-southeast-1",
+    "type": "update",
     "options":{
         "StackName": "Instance-Scheduler"
     },

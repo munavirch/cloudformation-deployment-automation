@@ -7,6 +7,6 @@ Resources:
     Properties:
       DisplayName: "Sample Topic"
       Subscription:
-        - Endpoint: https://someendpoint.com
+        - Endpoint: https://someendpoint1.com
           Protocol: https
       TopicName: SampleTopic
